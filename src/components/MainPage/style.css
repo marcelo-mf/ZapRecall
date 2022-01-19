@@ -1,0 +1,14 @@
+.main-container{
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.main-container .logo{
+    display: block;
+    margin-bottom: 188px;
+}

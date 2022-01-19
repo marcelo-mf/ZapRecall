@@ -1,0 +1,56 @@
+.container {
+    height: 80vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flashcard {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    width: 392px;
+    height: 576px;
+
+    background-color: white;
+    border-radius: 15px;
+
+    padding: 15px;
+
+    filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.178));
+}
+
+.flashcard img {
+    height: 50px;
+    width: 50px;
+}
+
+.flashcard .pergunta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+.flashcard.aprendi-agr {
+    border: solid 3px rgb(0, 0, 0);
+}
+
+.flashcard.nao-lembrei {
+    border: solid 3px rgb(255, 0, 0);
+}
+
+.flashcard.lembrei-com-esforco {
+    border: solid 3px rgb(0, 255, 0);
+}
+
+.flashcard.zap {
+    border: solid 3px yellow;
+}
