@@ -1,11 +1,11 @@
 import "./style.css"
 
-function SuccessPage({voltarInicio}) {
+function SuccessPage() {
     return (
         <>
             <div className="containers">
                 <h2>Parabéns 🥳</h2>
-                <button>Voltar ao início</button>
+                <p>Você não esqueceu de nenhum flashcard!</p>
             </div>
         </>
     );

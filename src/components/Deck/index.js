@@ -70,6 +70,14 @@ function Deck({setPagina}) {
         setCurrentPosition(nextPosition);
     }
 
+    function updateDeck(flashcard, status) {
+        const newDeck = [...deck]
+
+        newDeck[flashcard].status = status;
+
+        setDeck(newDeck)
+    }
+
     const deckJSX = deck.map(card => (
         <Flashcard 
             key ={card.title}
@@ -78,6 +86,7 @@ function Deck({setPagina}) {
             title={card.title} 
             answer={card.answer}
             goNext={goNext}
+            updateDeck={updateDeck}
         />
     ));
 

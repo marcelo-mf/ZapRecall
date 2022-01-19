@@ -17,7 +17,7 @@ function Footer( {answerCard, isAnswered, goNext} ) {
     )
 }
 
-export default function Flashcard({currentPosition, deckSize, title, answer, goNext}) {
+export default function Flashcard({currentPosition, deckSize, title, answer, goNext, updateDeck}) {
 
     const [isFlipped, setIsFlipped] = useState(true);
     const [status, setStatus] = useState('neutral')
@@ -26,6 +26,7 @@ export default function Flashcard({currentPosition, deckSize, title, answer, goN
     function answerCard(status) {
         setStatus(status)
         setIsAnswered(true)
+        updateDeck(currentPosition - 1, status)
     }
 
     return (
